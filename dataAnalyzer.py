@@ -11,3 +11,9 @@ for row in data:
 # Get basic statistics for Age and Score
 ages = [row['Age'] for row in data]
 scores = [row['Score'] for row in data]
+
+print("Age - min:", min(ages), "max:", max(ages), "mean:", sum(ages)/len(ages))
+print("Score - min:", min(scores), "max:", max(scores), "mean:", sum(scores)/len(scores))
+
+# Access the Age column
+print("Ages:", ages)

@@ -17,3 +17,7 @@ print("Score - min:", min(scores), "max:", max(scores), "mean:", sum(scores)/len
 
 # Access the Age column
 print("Ages:", ages)
+
+# Filter rows (e.g., Age > 21)
+filtered = [row for row in data if row['Age'] > 21]
+print("People with Age > 21:", filtered)

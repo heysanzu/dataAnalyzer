@@ -25,3 +25,7 @@ print("People with Age > 21:", filtered)
 # Find the person with the highest score
 highest = max(data, key=lambda x: x['Score'])
 print("Person with highest score:", highest)
+
+# Sort data by Age (ascending)
+sorted_by_age = sorted(data, key=lambda x: x['Age'])
+print("Sorted by Age:", sorted_by_age)

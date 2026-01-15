@@ -21,3 +21,7 @@ print("Ages:", ages)
 # Filter rows (e.g., Age > 21)
 filtered = [row for row in data if row['Age'] > 21]
 print("People with Age > 21:", filtered)
+
+# Find the person with the highest score
+highest = max(data, key=lambda x: x['Score'])
+print("Person with highest score:", highest)

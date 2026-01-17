@@ -29,3 +29,7 @@ print("Person with highest score:", highest)
 # Sort data by Age (ascending)
 sorted_by_age = sorted(data, key=lambda x: x['Age'])
 print("Sorted by Age:", sorted_by_age)
+
+# Add a new person
+data.append({'Name': 'Amit', 'Age': 22, 'Score': 91})
+print("After adding Amit:", data)

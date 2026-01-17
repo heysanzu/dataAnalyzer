@@ -33,3 +33,10 @@ print("Sorted by Age:", sorted_by_age)
 # Add a new person
 data.append({'Name': 'Amit', 'Age': 22, 'Score': 91})
 print("After adding Amit:", data)
+
+# Average score for people older than 21
+scores_over_21 = [row['Score'] for row in data if row['Age'] > 21]
+if scores_over_21:
+    print("Average score (Age > 21):", sum(scores_over_21)/len(scores_over_21))
+else:
+    print("No one over 21.")

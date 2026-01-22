@@ -40,3 +40,15 @@ if scores_over_21:
     print("Average score (Age > 21):", sum(scores_over_21)/len(scores_over_21))
 else:
     print("No one over 21.")
+
+# Save the data to a CSV file
+import csv
+with open('data.csv', 'w', newline='') as csvfile:
+    fieldnames = ['Name', 'Age', 'Score']
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+    writer.writeheader()
+    for row in data:
+        writer.writerow(row)
+
+import csv
